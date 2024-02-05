@@ -17,24 +17,37 @@
             crossorigin="anonymous"
         />
         <script src="https://kit.fontawesome.com/4554d31e64.js" crossorigin="anonymous"></script>
+        <style>
+            #bg-box{
+                position: relative;
+            }
+            #bg-box::before{
+                content: " ";
+                position: absolute;
+                width: 100%;
+                height: 25%;
+                background-color: yellow;
+                z-index: -1;
+                top: 0%;
+                left: 0;
+                border-radius: 30px 30px 0px 0px;
+            }
+        </style>
     </head>
 
     <body >
-        <header>
-            <!-- place navbar here -->
-        </header>
         <main>
             <div class="container" >
                 <div class="row" style="height: 90vh;">
-                    <div class="col-lg-4 col-10 m-auto shadow-lg rounded-5 text-center bg-white">
-                        <img class="my-4 " src="./p.jpg" alt="" width="70%" style="border-radius: 50%;"> 
+                    <div class="col-lg-4 col-10 m-auto shadow-lg rounded-5 text-center" id="bg-box">
+                        <img class="my-2 shadow-lg" src="./p.jpg" alt="" width="70%" style="border-radius: 50%;border: 20px solid white;"> 
                         <!-- <hr> -->
-                        <div class="my-3">
+                        <div class="my-2" >
                             <p class="fs-1">Justin Raj</p>
                             <p class="fs-5">Full Stack Developer</p>
                             <p class="fs-5">+3 Year Exp</p>
-                            <hr>
-                            <div class="d-flex justify-content-evenly my-4" style="width: 100%;">
+                            <hr class="my-4">
+                            <div class="d-flex justify-content-evenly my-3" style="width: 100%;">
                                 <i class="fa-brands fa-linkedin fs-3"></i>
                                 <i class="fa-solid fa-envelope fs-3"></i>
                                 <i class="fa-brands fa-whatsapp fs-3"></i>
@@ -48,10 +61,7 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
+        </main>        
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
